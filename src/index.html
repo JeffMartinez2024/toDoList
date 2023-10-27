@@ -9,34 +9,104 @@
     <title>Todo list</title>
 </head>
 
-<body class="bg-gray-100">
+<body background="https://www.metacontratas.com/wp-content/uploads/2022/07/125.-IMAGEN-scaled.jpg">
+    <div class="w-full">
+    <h1 class="text-center text-xl text-black md:py-10 bg-gray-400 bg-opacity-10 font-extralight">To Do List</h1>
+    </div>
+    
     <div class="container mx-auto p-4">
-        <h1 class="text-3xl font-semibold mb-4">To Do List</h1>
-        <hr>
         <form id="task-form" class="mb-4">
-            <div class="mb-2">
+            <div class="mb-4">
                 <input type="text" id="task-title" placeholder="Task title" required
-                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500">
+                    class="w-96 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500">
             </div>
 
-            <div class="mb-2">
+            <div class="mb-4">
                 <textarea id="task-description" placeholder="Task description"
-                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"></textarea>
-
-                    <div class="mb-2">
-                        <input type="date" id="due-date" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500">
-                    </div>
-
-                    <div class="mb-2">
-                        <input type="time" id="due-time"
-                            class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500">
-                    </div>
-
+                    class="w-96 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"></textarea>
             </div>
-            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Add
-                Task</button>
+
+            <div>
+                <div class="w-1/2">
+                    <input type="date" id="due-date"
+                        class="w-96 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500">
+                </div>
+                <br>
+                <div class="w-1/2">
+                    <input type="time" id="due-time"
+                        class="w-96 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500">
+                </div>
+            </div>
+                <br>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Add Task</button>
         </form>
+
         <ul id="task-list" class="space-y-4"></ul>
     </div>
+
+    <div class="w-full">
+        <h1 class="text-center text-xl text-black md:py-10 bg-gray-900 bg-opacity-10 font-extralight">Micro Tips de Organización</h1>
+    </div>
+
+    <!--Card 1-->
+    <div class="py-2 px-10 flex justify-center">
+        <p>
+          <a class="text-4xl font-semibold"></a>
+        </p>
+      </div>
+      
+      <div class="md:grid grid-cols-3 gap-0 container mx-auto py-5 px-11">
+        <div class="max-w-sm rounded-md bg-white overflow-hidden">
+          <div class="px-6 py-4">
+            <div class="font-bold md:text-xl md:mb-2">Tender la cama</div>
+          </div>
+        </div>
+
+      <!--Card 2-->
+      <div class="justify-evenly py-4">
+      <div class="max-w-sm rounded-md bg-white overflow-hidden shadow-md">
+      <div class="px-6 py-4">
+        <div class="font-bold md:text-xl md:mb-2">Si algo toma menos de 5 minutos hazlo inmediatamente</div>
+      </div>
+    </div>
+  </div>
+
+      <!--Card 3-->
+      <div class="justify-evenly py-4">
+      <div class="max-w-sm rounded-md bg-white overflow-hidden shadow-md">
+        <div class="px-6 py-4">
+          <div class="font-bold md:text-xl md:mb-2">Prepara tu vestimenta del día siguiente</div>
+        </div>
+      </div>
+    </div>
+
+      <!--Card 4-->
+      <div class="justify-evenly py-4">
+      <div class="max-w-sm rounded-md bg-white overflow-hidden shadow-md">
+        <div class="px-6 py-4">
+          <div class="font-bold md:text-xl md:mb-2">Organiza los documentos de tu computadora</div>
+        </div>
+      </div>
+    </div>
+
+    <!--Card 5-->
+    <div class="justify-evenly py-4">
+      <div class="max-w-sm rounded-md bg-white overflow-hidden shadow-md">
+        <div class="px-6 py-4">
+          <div class="font-bold md:text-xl md:mb-2">Organiza la casa</div>
+        </div>
+      </div>
+    </div>
+
+    <!--Card 6-->
+    <div class="justify-evenly py-4">
+      <div class="max-w-sm rounded-md bg-white overflow-hidden shadow-md">
+        <div class="px-6 py-4">
+          <div class="font-bold md:text-xl md:mb-2">Bota cosas que ya no utilices</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
