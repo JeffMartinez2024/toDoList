@@ -19,12 +19,16 @@ function addTaskToDOM(task) {
 
     const taskItem = document.createElement("li");
     taskItem.innerHTML = `
-        <h3>${task.title}</h3>
-        <p>${task.description}</p>
-        <p>Due Date: ${task.dueDate}</p>
-        <p>Due Time: ${task.dueTime}</p>
-        <button class="complete-button">Completar</button>
-        <button class="delete-button">Eliminar</button>
+        <br>
+       <div class="bg-white rounded-lg p-4 shadow-md">
+            <h3 class="text-lg font-semibold">${task.title}</h3>
+            <p class="text-gray-600">${task.description}</p>
+            <p class="text-blue-500">Due Date: ${task.dueDate}</p>
+            <p class="text-blue-500">Due Time: ${task.dueTime}</p>
+            <br>
+            <button class="complete-button bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 mr-2">Complete</button>
+            <button class="delete-button bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600">Delete</button>
+        </div>
     `;
 
     taskList.appendChild(taskItem);
